@@ -1,14 +1,26 @@
 Ext.define('MiniProject.view.Main', {
-    extend: 'Ext.Panel',
+    extend: 'Ext.TabPanel',
     xtype: 'main',
     requires: [
     ],
     config: {
+		tabBarPosition : "bottom",
 		items : [
 			{
-				xtype : "titlebar",
-				title : "Welcome",
-				height : "5%"
+				title : "Home",
+				xtype : "home",
+				iconCls : "home",
+				id : "home"
+			},
+			{
+				title : "Beginner",
+				xtype : "beginner",
+				id : "beginner"
+			},
+			{
+				title : "Advanced",
+				xtype : "advanced",
+				id : "advanced"
 			}
 		]
     }

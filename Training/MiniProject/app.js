@@ -8,7 +8,7 @@ Ext.application({
 		"StartupController"
 	],
     views: [
-        'Main',"NoInternetView"
+        'Main',"NoInternetView","Home","Beginner","Advanced"
     ],
 
     icon: {
